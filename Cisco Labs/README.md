@@ -1,11 +1,3 @@
-
----
-
-# 📂 2. `Labs/README.md`
-
-This one should be **much simpler** because the root README already explains the whole project.
-
-```markdown
 # Cisco Packet Tracer Labs
 
 This folder contains the Cisco Packet Tracer `.pkt` files for the 10 networking labs included in this repository.

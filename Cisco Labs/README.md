@@ -89,16 +89,16 @@ This project helped me learn:
 The labs were tested using Cisco IOS verification commands and end-device connectivity tests.
 examples 
 
+```text
 show ip interface brief
 show ip route
 show vlan brief
 show port-security interface
 show ip dhcp binding
-ping
-tracert
-
+ping <IP-address>
+tracert <IP-address>
+```
 ---
-
 
 ## 📚 Documentation
 

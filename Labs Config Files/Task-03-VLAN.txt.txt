@@ -1,0 +1,37 @@
+TASK 03 - VLAN CONFIGURATION
+
+Switch Configuration:
+
+en
+config t
+
+vlan 10
+vlan 20
+
+int range fa0/1-2
+sw acc vlan 10
+exit
+
+int range fa0/3-4
+sw acc vlan 20
+exit
+
+wr
+
+
+Verification:
+
+show vlan brief
+
+Connect the PCs to the respective switch ports.
+
+VLAN 10:
+PCs connected to Fa0/1 and Fa0/2
+
+VLAN 20:
+PCs connected to Fa0/3 and Fa0/4
+
+Test connectivity using ping.
+
+Same VLAN → Ping successful
+Different VLAN → Ping unsuccessful

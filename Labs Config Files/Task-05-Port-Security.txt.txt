@@ -1,0 +1,35 @@
+TASK 05 - SWITCH PORT SECURITY
+
+Devices:
+1. Switch - 1
+2. PC - 2
+3. Cable - Straight-Through
+
+
+Switch Configuration:
+
+en
+config t
+
+int fa0/1
+sw mode acc
+sw port-security
+sw port-security mac-address sticky
+sw port-security violation shutdown
+
+end
+wr
+
+
+To Verify:
+
+sh port-security int fa0/1
+
+
+Testing:
+
+Connect the authorized PC to Fa0/1 and test connectivity using ping.
+
+Then connect a new/unauthorized PC to Fa0/1.
+
+The port will go into shutdown state due to the port-security violation.

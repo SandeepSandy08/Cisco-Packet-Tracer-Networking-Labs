@@ -1,0 +1,63 @@
+========================================================
+TASK 01 - BASIC CISCO ROUTER CONFIGURATION
+========================================================
+
+Devices:
+1. Router - 2
+2. PC - 2
+3. Cable - Cross-Over, Serial DCE
+4. Module - HWIC-T2 for both routers
+
+
+Router 1 - Command
+
+en
+config t
+
+int g0/0
+ip add 192.168.11.1 255.255.255.0
+no shut
+exit
+
+int s0/0/0
+ip add 192.168.12.1 255.255.255.0
+clock rate 64000
+no shut
+exit
+
+ip route 192.168.13.0 255.255.255.0 192.168.12.2
+
+
+Router 2 - Command
+
+en
+config t
+
+int g0/0
+ip add 192.168.13.1 255.255.255.0
+no shut
+exit
+
+int s0/0/1
+ip add 192.168.12.2 255.255.255.0
+no shut
+exit
+
+ip route 192.168.11.0 255.255.255.0 192.168.12.1
+
+
+PC Configuration:
+
+PC 1 IP → 192.168.11.8
+Default Gateway → 192.168.11.1
+
+PC 2 IP → 192.168.13.3
+Default Gateway → 192.168.13.1
+
+
+To Verify:
+
+show ip route
+show ip int br
+
+Test connectivity using ping between PC1 and PC2.

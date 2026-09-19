@@ -1,0 +1,45 @@
+TASK 08 - DHCP SERVER CONFIGURATION
+
+Devices:
+1. Router - 1
+2. Switch - 1
+3. Server - 1
+4. PC - 1
+5. Laptop - 1
+6. Cable - Straight-Through
+
+
+Router - Command
+
+en
+config t
+
+int g0/0/0
+ip add 192.168.13.1 255.255.255.0
+no shut
+exit
+
+
+DHCP Config
+
+ip dhcp excluded-address 192.168.13.1 192.168.13.10
+
+ip dhcp pool (any name)
+network 192.168.13.0 255.255.255.0
+default-router 192.168.13.1
+
+end
+wr
+
+
+To Verify:
+
+show ip dhcp binding
+show ip int br
+
+
+PC & Laptop:
+
+Select DHCP in the IP Configuration settings.
+
+The PC and Laptop will automatically receive an IP address from the router.

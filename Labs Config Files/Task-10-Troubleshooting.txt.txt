@@ -1,0 +1,70 @@
+TASK 10 - BASIC NETWORK TROUBLESHOOTING USING PING AND TRACEROUTE
+
+Devices:
+1. Switch - 2
+2. Router - 2
+3. PC - 2
+4. Cable - Straight-Through, Cross-Over
+
+
+Router 1 - Command
+
+en
+config t
+
+int gig0/1
+ip add 192.168.11.1 255.255.255.0
+no shut
+exit
+
+int gig0/0
+ip add 10.0.0.1 255.255.255.0
+no shut
+exit
+
+
+Router 2 - Command
+
+en
+config t
+
+int gig0/1
+ip add 192.168.13.1 255.255.255.0
+no shut
+exit
+
+int gig0/0
+ip add 10.0.0.2 255.255.255.0
+no shut
+exit
+
+
+Router 1 - Static Route
+
+ip route 192.168.13.0 255.255.255.0 10.0.0.2
+
+
+Router 2 - Static Route
+
+ip route 192.168.11.0 255.255.255.0 10.0.0.1
+
+
+PC Configuration:
+
+Assign IP addresses to both PCs.
+
+Test connectivity using ping.
+
+ping 192.168.13.3
+
+Use traceroute to check the path:
+
+tracert 192.168.13.3
+
+
+To Verify:
+
+show ip route
+show ip int br
+ping 192.168.13.3
+tracert 192.168.13.3

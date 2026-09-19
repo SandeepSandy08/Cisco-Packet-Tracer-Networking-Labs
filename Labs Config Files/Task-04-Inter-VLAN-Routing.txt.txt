@@ -1,0 +1,66 @@
+TASK 04 - INTER-VLAN ROUTING
+
+Devices:
+1 Router
+1 Switch
+4 PCs
+
+
+In Switch:
+
+en
+config t
+
+vlan 10
+exit
+
+vlan 20
+exit
+
+int range fa0/1-2
+sw acc vlan 10
+exit
+
+int range fa0/3-4
+sw acc vlan 20
+exit
+
+int fa0/24
+sw mode trunk
+exit
+
+wr
+
+
+In Router:
+
+en
+config t
+
+int gig0/0
+no shut
+exit
+
+int gig0/0.10
+encap dot1Q 10
+ip add 192.168.11.8 255.255.255.0
+exit
+
+int gig0/0.20
+encap dot1Q 20
+ip add 192.168.13.3 255.255.255.0
+exit
+
+end
+wr
+
+
+Verification:
+
+show vlan brief
+show ip interface brief
+
+Test connectivity using ping.
+
+Same VLAN → Ping successful
+Different VLAN → Ping successful

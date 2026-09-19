@@ -1,0 +1,57 @@
+TASK 07 - DEFAULT ROUTE CONFIGURATION
+
+Devices:
+1. Switch - 2
+2. Router - 2
+3. PC - 2
+4. Cable - Straight-Through, Cross-Over
+
+
+Router 1 - Command
+
+en
+config t
+
+int gig0/0
+ip add 192.168.11.1 255.255.255.0
+no shut
+exit
+
+int gig0/1
+ip add 10.0.0.1 255.255.255.0
+no shut
+exit
+
+ip route 0.0.0.0 0.0.0.0 10.0.0.2 			Creates a default route on Router 1 and forwards traffic with no more specific route to 10.0.0.2.
+
+end
+wr
+
+
+Router 2 - Command
+
+en
+config t
+
+int g0/0
+ip add 192.168.13.1 255.255.255.0
+no shut
+exit
+
+int gig0/1
+ip add 10.0.0.2 255.255.255.0
+no shut
+exit
+
+ip route 0.0.0.0 0.0.0.0 10.0.0.1   		#Creates a default route on Router 1 and forwards traffic with no more specific route to 10.0.0.2.
+
+end
+wr
+
+
+To Verify:
+
+show ip route
+show ip int br
+
+Test connectivity using ping between PC1 and PC2.

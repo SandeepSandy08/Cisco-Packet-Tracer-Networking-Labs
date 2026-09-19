@@ -4,24 +4,7 @@ A practical collection of Cisco networking labs created using **Cisco Packet Tra
 
 This repository contains hands-on networking labs covering basic Cisco device configuration, VLANs, routing, network services, security, and troubleshooting.
 
-The purpose of this repository is to document my practical learning and provide a structured reference for the configurations and Packet Tracer lab files.
-
----
-
-## 📚 Labs Covered
-
-| No. | Lab | Topic |
-|-----|-----|-------|
-| 01 | Basic Cisco Router Configuration | Router configuration and interface setup |
-| 02 | Basic Cisco Switch Configuration | Switch configuration and basic management |
-| 03 | VLAN Configuration and Verification | VLAN creation, assignment, and verification |
-| 04 | Inter-VLAN Routing | Router-on-a-Stick configuration |
-| 05 | Switch Port Security | MAC-based port security |
-| 06 | Static Routing | Routing between two networks using static routes |
-| 07 | Default Route Configuration | Configuring and verifying a default route |
-| 08 | DHCP Server Configuration | DHCP configuration on a Cisco router |
-| 09 | DNS Configuration | DNS configuration in a Cisco network |
-| 10 | Network Troubleshooting | Troubleshooting using Ping and Traceroute |
+The purpose of this repository is to document my practical learning and provide a structured reference for the configurations and Packet Tracer lab files
 
 ---
 

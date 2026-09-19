@@ -104,13 +104,15 @@ tracert <IP-address>
 
 Detailed explanations, configuration steps, verification results, and screenshots for these labs are available in the `Documentation` folder.
 
+---
+
+## ⚠️ Note
+This project is developed for educational and internship purposes.
+
+---
 ## Author
 
 Sandeep Kumar J S
 Aspiring Cybersecurity Professional
 
----
-
-## ⚠️ Note
-This project is developed for educational and internship purposes.
 

@@ -11,7 +11,7 @@ Each `.txt` file contains the Cisco IOS commands and configurations used to comp
 | No. | Lab | Configuration File |
 |-----|-----|--------------------|
 | 01 | Basic Cisco Router Configuration | `Task-01-Router.txt` |
-| 02 | Basic Cisco Switch Configuration | `Task-02-Switch.txt` |
+| 02 | Basic Cisco Switch Configuration | `No Config ` |
 | 03 | VLAN Configuration and Verification | `Task-03-VLAN.txt` |
 | 04 | Inter-VLAN Routing | `Task-04-Inter-VLAN-Routing.txt` |
 | 05 | Switch Port Security | `Task-05-Port-Security.txt` |

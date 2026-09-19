@@ -70,12 +70,47 @@ The corresponding configuration commands can be found in the `Config Files` fold
 
 ---
 
+## Learning Outcomes
+
+This project helped me learn:
+
+- Configure Cisco routers and switches
+- Configure and verify VLANs
+- Implement inter-VLAN routing
+- Configure switch port security
+- Configure static and default routes
+- Configure DHCP and DNS services
+- Perform basic network troubleshooting
+- Verify network connectivity using `ping` and `tracert`
+---
+
+## Verification
+
+The labs were tested using Cisco IOS verification commands and end-device connectivity tests.
+examples 
+
+show ip interface brief
+show ip route
+show vlan brief
+show port-security interface
+show ip dhcp binding
+ping
+tracert
+
+---
+
+
 ## 📚 Documentation
 
 Detailed explanations, configuration steps, verification results, and screenshots for these labs are available in the `Documentation` folder.
 
+## Author
+
+Sandeep Kumar J S
+Aspiring Cybersecurity Professional
+
 ---
 
 ## ⚠️ Note
+This project is developed for educational and internship purposes.
 
-These labs are intended for educational and practical networking purposes.

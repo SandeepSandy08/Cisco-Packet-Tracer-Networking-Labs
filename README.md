@@ -34,7 +34,6 @@ Cisco-Packet-Tracer-Network-Labs/
 │
 ├── Config Files/
 │   ├── Task-01-Router.txt
-│   ├── Task-02-Switch.txt
 │   ├── Task-03-VLAN.txt
 │   ├── Task-04-Inter-VLAN-Routing.txt
 │   ├── Task-05-Port-Security.txt

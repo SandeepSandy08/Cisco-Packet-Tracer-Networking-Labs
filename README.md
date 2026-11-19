@@ -15,7 +15,7 @@ Cisco-Packet-Tracer-Network-Labs/
 │
 ├── README.md
 │
-├── Config Files/
+├── Labs Config Files/
 │   ├── Task-01-Router.txt
 │   ├── Task-03-VLAN.txt
 │   ├── Task-04-Inter-VLAN-Routing.txt
@@ -26,7 +26,7 @@ Cisco-Packet-Tracer-Network-Labs/
 │   ├── Task-09-DNS.txt
 │   └── Task-10-Troubleshooting.txt
 │
-├── Labs/
+├── Cisco Labs/
 │   ├── README.md
 │   ├── Task-01-Router.pkt
 │   ├── Task-02-Switch.pkt
